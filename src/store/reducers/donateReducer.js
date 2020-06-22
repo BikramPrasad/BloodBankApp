@@ -7,10 +7,8 @@ const initState = {
 const donateReducer = (state = initState, action) => {
   switch (action.type) {
     case "MAKE_DONATION":
-      console.log("created donations", action.donor);
       return state;
     case "MAKE_DONATION_ERROR":
-      console.log("make donate error", action.err);
       return state;
     default:
       return state;

@@ -11,7 +11,7 @@ class SearchResults extends PureComponent {
       .then((snapshot) => {
         snapshot.docs.forEach((doc) => {
           const dat = doc.data();
-          // console.log(dat);
+          //
           let params = new URL(document.URL).searchParams;
           if (
             dat.city.trim() === params.get("city").trim() &&
@@ -22,7 +22,7 @@ class SearchResults extends PureComponent {
             });
         });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {});
   }
 
   render() {

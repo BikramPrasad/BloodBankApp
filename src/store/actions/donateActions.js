@@ -2,7 +2,7 @@ export const makeDonation = (donor) => {
   return (dispatch, getState, { getFirestore }) => {
     const firestore = getFirestore();
     const profile = getState().firebase.profile;
-    console.log(profile);
+
     firestore
       .collection("donor")
       .add({

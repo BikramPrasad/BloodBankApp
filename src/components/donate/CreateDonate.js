@@ -22,7 +22,7 @@ class CreateDonate extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    //console.log(this.state);
+    //
     this.props.makeDonation(this.state);
     this.props.history.push("/");
   };
